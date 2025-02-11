@@ -1,0 +1,17 @@
+<% if(locals.welcome_text) { %>
+    <% if(welcome_text === "home"){ %>
+        <div class="animal_names">
+            <% animal_names.forEach(animal => { %>
+                <a href="./mammals/<%= animal.name %>"><%= animal.name %></a><br>
+            <% }) %>
+            </div>
+    <% } else if(welcome_text === "mammals") { %>
+        <div>
+            <% animal_names.forEach(animal => { %>
+                <a href="./mammals/<%= animal.name %>"><%= animal.name %></a><br>
+            <% }) %>
+        </div>
+    <% } %>
+
+
+<% } %>
