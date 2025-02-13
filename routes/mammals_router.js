@@ -1,6 +1,7 @@
 import express from "express";
 import { mammalArray } from "../data/animals.js";
-import express from "express";
+
+
 
 const mammalsRouter = express();
 

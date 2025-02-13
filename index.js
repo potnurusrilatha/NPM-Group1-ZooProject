@@ -1,6 +1,7 @@
 import express from "express";
 import * as path from "path";
 import { animalArray } from "./data/animals.js";
+import mammalsRouter  from "./routes/mammals_router.js";
 
 
 const PORT = 3000;
@@ -22,6 +23,5 @@ app.get("/",(req,res) => {
     })
 })
 
-
-app.use("mammals", mammalsRouter)
+app.use("/mammals", mammalsRouter);
 app.listen(PORT,() => console.log(`Listening on port ${PORT}`));
