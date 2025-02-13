@@ -1,96 +1,186 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100vh;
 }
 
-body{
-    height:100%;
+body {
+    height: 100%;
     background-image: url("../images/home_bg_1.jpg");
     object-fit: cover;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.logo{
-    display:flex;
+.logo {
+    display: flex;
 }
 
 .logo img {
-    padding:8px;
-    margin-top:8px;
-    margin-left:16px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 16px;
     width: 300px;
     height: auto;
 }
 
-.header_title{
-    color:white;
+.header_title {
+    padding: 16px;
+    margin-left: 20%;
+}
+
+.header_title_text {
+    color: white;
     padding: 16px;
     font-size: 4rem;
-    margin-left:32%;
+    margin-left: 10%;
 }
 
-.nav_menu{
-    display:flex;
+.nav_menu {
+    display: flex;
     justify-content: space-around;
-    margin:8px;
-    padding:16px;
+    margin: 8px;
+    padding: 16px;
 }
 
-.nav_menu a{
-    color:white;
+.nav_menu a {
+    border: 1px solid #21ebff;
+    color: #21ebff;
     font-size: 2rem;
+    box-shadow: 0 0 10px #21ebff, 0 0 10px #21ebff inset;
+    transition: all 0.3s ease;
+    padding: 16px;
 }
 
-.nav_menu a:hover{
-    transform: scale(1.5);
-    color:chartreuse;
+.nav_menu a:hover {
+    text-shadow:
+        0 0 20px #f752b2,
+        0 0 50px rgba(90, 204, 119, 0.9),
+        0 0 75px rgba(192, 216, 88, 0.8),
+        0 0 76px rgba(221, 58, 180, 0.7),
+        0 0 77px rgba(151, 255, 33, 0.6),
+        0 0 78px rgba(33, 235, 255, .5),
+        0 0 79px rgba(235, 226, 103, 0.4),
+        0 0 80px rgba(245, 223, 24, 0.3),
+        0 0 85px rgba(123, 231, 171, 0.2),
+        0 0 99px rgba(215, 255, 35, 0.1);
 }
 
-.animal_names a{
-    font-size:1.5rem;
-    color:white;
-    padding:16px;
-    margin:16px;
+.sidebar_animal_names {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 16px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 
-.animal_names a:hover{
-    transform: scale(1.5);
-    color:chartreuse;
+.sidebar_animal_names a {
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
 }
 
-.wrapper{
-    display:flex;
+.page_link {
+    color: white;
+    width: 130px;
+    height: 100px;
+    padding:8px;
+    padding-top: 32px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    border: none;
+    text-align: center;
+}
+
+
+/* 14 */
+.page_link:before,
+.page_link:after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    border: 4px solid;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.page_link:before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #52e924;
+    border-left-color: #00aced;
+}
+
+.page_link:after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #52e924;
+    border-right-color: #00aced;
+}
+
+.page_link:hover:before,
+.page_link:hover:after {
+    border-color: #f8248e;
+    border-top-color: #52e924;
+    border-right-color: #52e924;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px #00aced, 0 0 10px #00aced inset;
+    color:#52e924
+}
+
+.wrapper {
+    display: flex;
     flex-grow: 1;
 }
 
-.welcome{
+.welcome {
     color: white;
     font-size: 2rem;
 }
 
-.main_content_description{
+.welcome_description {
+    align-content: center;
+    flex-basis: 80%;
     color: white;
-    display:flex;
+    display: flex;
     flex-direction: column;
     font-size: 1.25rem;
 }
 
-.animal_names{
-    flex-basis: 20%;
-    text-align: center;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
+.animal_grid{
+    display:grid;
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+    gap:8px;
 }
 
-.main_content{
+.main_content_description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+.main_content {
     flex-basis: 80%;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -105,9 +195,10 @@ body{
     color: white;
     gap: 24px;
     padding: 24px;
+    width:100%;
 }
 
-.footer-copyright{
+.footer-copyright {
     font-size: 1.5rem;
 }
 

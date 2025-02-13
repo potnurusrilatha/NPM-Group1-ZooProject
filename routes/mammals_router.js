@@ -8,7 +8,7 @@ mammalsRouter.get("/",(req,res) => {
         style_file_name : "home",
         body_class:"home",
         header_class:"home",
-        main_content_page : "home",
+        main_content_page : "mammals",
         welcome_text : "Mammals",
         animal_names : mammalArray
     })
@@ -24,6 +24,24 @@ mammalsRouter.get("/echidna",(req,res) => {
     })
 })
 
+mammalsRouter.get("/Tasmanian-Devil",(req,res) => {
+    let tasmanian = mammalArray[1];
+    res.render("pages/animal_display.ejs",{
+        welcome_text: "mammals",
+        main_content_page : "animals",
+        animal:tasmanian,
+        animal_names : mammalArray
+    })
+})
 
+mammalsRouter.get("/Quokka",(req,res) => {
+    let quokka = mammalArray[0];
+    res.render("pages/animal_display.ejs",{
+        welcome_text: "mammals",
+        main_content_page : "animals",
+        animal: quokka,
+        animal_names : mammalArray
+    })
+})
 
 export default mammalsRouter;

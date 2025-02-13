@@ -1,10 +1,25 @@
 <% if(locals.main_content_page){ %>
    <% if(locals.main_content_page === "home") { %>
-        <h1 class="welcome">Welcome to the page</h1>
+        <div class="welcome_description">
+                <h2 class="welcome">Welcome to the  animal page</h2>
+                <div>Here u find about reptiles, birds , mammals</div>
+                <div class="animal_grid">
+                        <% animal_names.forEach(animal => { %>
+                                <div>
+                                        <img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="250px" height="auto">
+                                        <p><%=animal.name.replace(" ","-")%></p>
+                                </div>
+                        <% }) %>
+                </div>
+        </div>
+   <% } if(locals.main_content_page === "mammals") { %>
+        <h1 class="welcome">Welcome to the  animal page</h1>
+        <h3 class="welcome">Here u find about mammals</h1>
    <% } else if(locals.main_content_page === "animals"){ %>
                 <div class="main_content_description">       
-                        <h1 class="header_title">Animal Name <%= animal.animal_name %></h1>
-                        <h2 class="group_name">Group name <%= animal.group_name %></h2>
+                        <h1 class="header_title">Animal Name: <%= animal.name %></h1>
+                        <h2 class="group_name">Group name: <%= animal.groupName %></h2>
+                        <img src="/images/<%=animal.name%>.jpg" alt="animal_image" width="250px" height="auto">
                         <p><strong>Life Span:</strong> <%= animal.lifeSpan %> years</p>
                         <p><strong>Food:</strong> <%= animal.food %></p>
                         <p><strong>Description:</strong> <%= animal.description %></p>
@@ -15,5 +30,6 @@
                 </div>         
         <% } %>
 <% } %>
+
 
 

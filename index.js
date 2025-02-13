@@ -1,7 +1,7 @@
 import express from "express";
 import * as path from "path";
 import { animalArray } from "./data/animals.js";
-
+import mammalsRouter from "./routes/mammals_router.js";
 
 const PORT = 3000;
 const app = express();
@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname,"public")))
 app.get("/",(req,res) => {
     res.render("pages/home.ejs",{
         animal : animalArray,
-       main_content_page :"home",
+        main_content_page :"home",
         body_class:"home",
         welcome_text : "Australian Zoo",
         animal_names : animalArray
@@ -23,6 +23,5 @@ app.get("/",(req,res) => {
 })
 
 
-
-
+app.use("/mammals",mammalsRouter);
 app.listen(PORT,() => console.log(`Listening on port ${PORT}`));
