@@ -91,6 +91,13 @@ body{
     padding: 16px;
 }
 
+.main_content_description{
+    color: white;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
