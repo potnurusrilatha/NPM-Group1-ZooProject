@@ -27,7 +27,7 @@ mammalsRouter.get("/echidna",(req,res) => {
 })
 
 
-mammalsRouter.get("/tasmanian_devil",(req , res) => {
+mammalsRouter.get("/tasmanian-devil",(req , res) => {
     let tasmanian_devil = mammalArray[1];
     res.render("pages/animal_display.ejs",{
         welcome_text: "mammals",
