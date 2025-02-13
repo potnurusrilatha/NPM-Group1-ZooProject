@@ -33,6 +33,10 @@ body{
     margin-left:32%;
 }
 
+.header_title_text {
+    text-align: left;
+}
+
 .nav_menu{
     display:flex;
     justify-content: space-around;

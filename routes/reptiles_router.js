@@ -15,7 +15,7 @@ reptilesRouter.get("/",(req,res) => {
     })
 })
 
-reptilesRouter.get("/Frill-necked lizard",(req,res)  => {
+reptilesRouter.get("/Frill-necked-lizard",(req,res)  => {
     let frillNeckedLizard = reptileArray[1];
     res.render("pages/animal_display.ejs", {
         animal: frillNeckedLizard,
@@ -26,7 +26,7 @@ reptilesRouter.get("/Frill-necked lizard",(req,res)  => {
     })
 })
 
-    reptilesRouter.get("/hawksbillTurtle",(req,res) => {
+    reptilesRouter.get("/Hawksbill-Turtle",(req,res) => {
         let hawksbillTurtle = reptileArray[2];
         res.render("pages/animal_display.ejs", {
             animal: hawksbillTurtle,

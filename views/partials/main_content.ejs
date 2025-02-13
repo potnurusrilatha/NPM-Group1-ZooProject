@@ -3,7 +3,7 @@
         <h1 class="welcome">Welcome to the page</h1>
    <% } else if(locals.main_content_page === "animals"){ %>
         <div class="main_content_description">      
-                <h1 class="header_title">Animal Name: <%= animal.name %></h1>
+                <h1 class="header_title_text">Animal Name: <%= animal.name %></h1>
                 <h2 class="group_name">Group name: <%= animal.groupName %></h2>
                 <img src="/images/<%=animal.name%>.jpg" alt="animal_image" width="250px" height="auto">
                 <p><strong>Life Span:</strong> <%= animal.lifeSpan %> years</p>
