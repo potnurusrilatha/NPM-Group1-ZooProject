@@ -23,6 +23,5 @@ app.get("/",(req,res) => {
 })
 
 
-
-
+app.use("mammals", mammalsRouter)
 app.listen(PORT,() => console.log(`Listening on port ${PORT}`));
