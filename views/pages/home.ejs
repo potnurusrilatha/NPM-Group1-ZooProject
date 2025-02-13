@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="/style/style.css">
-</head>
+    <%- include('../partials/head.ejs') %>
 <body>
+<<<<<<< HEAD
     <header>
         <h1 class="header_title">
             <%= welcome_text %>
@@ -17,5 +13,14 @@
     </header>
     <%- include('../partials/sidebar.ejs') %>
     <%- include('../partials/main_content.ejs') %>
+=======
+    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/nav_menu.ejs') %>
+    <div class="wrapper">
+        <%- include('../partials/sidebar.ejs') %>
+        <%- include('../partials/main_content.ejs') %>
+    </div>
+    <%- include('../partials/footer.ejs') %>
+>>>>>>> main
 </body>
 </html>

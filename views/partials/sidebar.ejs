@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% if(locals.welcome_text) { %>
      <% if(welcome_text === "home"){ %>
         <div class="animal_names">
@@ -21,3 +22,11 @@
 
 
 <% } %>
+=======
+        <div class="animal_names">
+            <% animal_names.forEach(animal => { %>
+                <a href="./<%= animal.groupName %>/<%= animal.name %>"><%= animal.name %></a><br>
+            <% }) %>
+        </div>
+   
+>>>>>>> main
