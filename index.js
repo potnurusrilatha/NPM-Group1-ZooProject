@@ -2,7 +2,6 @@ import express from "express";
 import * as path from "path";
 import { animalArray } from "./data/animals.js";
 
-
 const PORT = 3000;
 const app = express();
 const __dirname = path.resolve();
@@ -21,7 +20,6 @@ app.get("/",(req,res) => {
         animal_names : animalArray
     })
 })
-
 
 
 
