@@ -6,7 +6,7 @@ const birdsRouter = express();
 birdsRouter.get("/",(req,res) => {
     res.render("pages/home.ejs",{   
         style_file_name : "home",
-        body_class:"birds",
+        body_class:"home",
         header_class:"home",
         main_content_page : "home",
         welcome_text : "birds",
