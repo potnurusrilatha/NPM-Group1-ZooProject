@@ -72,11 +72,22 @@ body{
     font-size: 2rem;
 }
 
-.main_content_description{
+
+.main_content_description {
     color: white;
-    display:flex;
+    display: flex;
     flex-direction: column;
     font-size: 1.25rem;
+}
+ 
+.main_content {
+    flex-basis: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 2rem;
+    padding: 16px;
 }
 
 .animal_names{
@@ -135,5 +146,12 @@ body{
 /* Reptile.css */
 
 /* Birds.css */
+
+
+
+
+
+
+
 
 /* Mammals.css */
