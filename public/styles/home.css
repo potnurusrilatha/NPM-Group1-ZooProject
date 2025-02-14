@@ -1,96 +1,135 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
-    height: 100vh;
+html {
+    min-height: 100vh;
 }
 
-body{
-    height:100%;
+body {
+    height: 100%;
     background-image: url("../images/home_bg_1.jpg");
     object-fit: cover;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.logo{
-    display:flex;
+.logo {
+    display: flex;
 }
 
 .logo img {
-    padding:8px;
-    margin-top:8px;
-    margin-left:16px;
-    width: 300px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 16px;
+    width: 150px;
     height: auto;
 }
 
-.header_title{
-    color:white;
+.header_title {
     padding: 16px;
-    font-size: 4rem;
-    margin-left:32%;
 }
 
-.nav_menu{
-    display:flex;
-    justify-content: space-around;
-    margin:8px;
-    padding:16px;
-}
-
-.nav_menu a{
-    color:white;
+.header_title_text {
+    color: white;
+    padding: 16px;
     font-size: 2rem;
 }
 
-.nav_menu a:hover{
-    transform: scale(1.5);
-    color:chartreuse;
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+    padding: 16px;
 }
 
-.animal_names a{
-    font-size:1.5rem;
-    color:white;
-    padding:16px;
-    margin:16px;
+.nav_menu a {
+    border: 1px solid #21ebff;
+    color: #21ebff;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
+    transition: all 0.3s ease;
+    padding: 8px;
 }
 
-.animal_names a:hover{
-    transform: scale(1.5);
-    color:chartreuse;
+.sidebar_animal_names {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.wrapper{
-    display:flex;
+.sidebar_animal_names a {
+    font-size: 1.5rem;
+    color: #21ebff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
 
-.welcome{
+.welcome_description {
+    align-content: center;
+    flex-basis: 80%;
     color: white;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    margin: 48px;
+    background-color: rgba(36, 34, 34, 0.15);
+    backdrop-filter: blur(5px);
 }
 
-.main_content_description{
+.welcome_text {
     color: white;
-    display:flex;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.zoo_description {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.animal_grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_items a {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.grid_items p {
+    padding: 8px;
+    margin-left: 35%;
+}
+
+
+.main_content_description {
+    color: white;
+    display: flex;
     flex-direction: column;
     font-size: 1.25rem;
 }
 
-.animal_names{
-    flex-basis: 20%;
-    text-align: center;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-}
-
-.main_content{
+.main_content {
     flex-basis: 80%;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -105,31 +144,32 @@ body{
     color: white;
     gap: 24px;
     padding: 24px;
+    width: 100%;
 }
 
-.footer-copyright{
-    font-size: 1.5rem;
+.footer-copyright {
+    font-size: 1rem;
 }
 
 .footer-logo h2 {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .footer-contact h4 {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .footer-contact p {
     font-size: 1rem;
 }
 
-.footer_social-media h4 {
-    font-size: 1.4rem;
+.footer_social-media {
+    font-size: 1rem;
+    display: none;
 }
 
 .footer-logo img {
-    width: 200px;
-    height: auto;
+    display: none;
 }
 
 /* Reptile.css */
@@ -137,3 +177,467 @@ body{
 /* Birds.css */
 
 /* Mammals.css */
+
+@media screen and (min-width:700px) {
+
+    .logo {
+        display: flex;
+    }
+
+    .logo img {
+        padding: 8px;
+        width: 200px;
+        height: auto;
+    }
+
+    .header_title {
+        padding: 16px;
+        margin-left: 16px;
+    }
+
+    .header_title_text {
+        color: white;
+        padding: 16px;
+        font-size: 3rem;
+    }
+
+    .nav_menu {
+        display: flex;
+        justify-content: space-around;
+        margin: 8px;
+        padding: 16px;
+    }
+
+    .nav_menu a {
+        border: 1px solid #21ebff;
+        color: #21ebff;
+        font-size: 1.5rem;
+        box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
+        transition: all 0.3s ease;
+        padding: 8px;
+    }
+
+    .nav_menu a:hover {
+        text-shadow:
+            0 0 20px #f752b2,
+            0 0 50px rgba(90, 204, 119, 0.9),
+            0 0 75px rgba(192, 216, 88, 0.8),
+            0 0 76px rgba(221, 58, 180, 0.7),
+            0 0 77px rgba(151, 255, 33, 0.6),
+            0 0 78px rgba(33, 235, 255, .5),
+            0 0 79px rgba(235, 226, 103, 0.4),
+            0 0 80px rgba(245, 223, 24, 0.3),
+            0 0 85px rgba(123, 231, 171, 0.2),
+            0 0 99px rgba(215, 255, 35, 0.1);
+    }
+
+    .page_link {
+        color: white;
+        width: 150px;
+        height: 150px;
+        padding: 8px;
+        padding-top: 16px;
+        font-family: 'Lato', sans-serif;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        border: none;
+        text-align: center;
+    }
+
+    .sidebar_animal_names {
+        flex-basis: 20%;
+        text-align: center;
+        padding: 16px;
+        margin-left: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar_animal_names a {
+        padding-top: 15%;
+        font-size: 1.5rem;
+        margin: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* 14 */
+    .page_link:before,
+    .page_link:after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        border: 4px solid;
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    .page_link:before {
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #52e924;
+        border-left-color: #00aced;
+    }
+
+    .page_link:after {
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: #52e924;
+        border-right-color: #00aced;
+    }
+
+    .page_link:hover:before,
+    .page_link:hover:after {
+        border-color: #4d9e93;
+        border-top-color: #52e924;
+        border-right-color: #52e924;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 10px #00aced, 0 0 10px #00aced inset;
+        color: #52e924
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+
+    .welcome_description {
+        align-content: center;
+        flex-basis: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin: 48px;
+        background-color: rgba(36, 34, 34, 0.15);
+        backdrop-filter: blur(5px);
+    }
+
+    .welcome_text {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .zoo_description {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .animal_grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_items a {
+        padding: 8px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .grid_items p {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        gap: 24px;
+        padding: 24px;
+        width: 100%;
+    }
+
+    .footer-copyright {
+        font-size: 1.5rem;
+    }
+
+    .footer-logo h2 {
+        font-size: 2rem;
+    }
+
+    .footer-contact h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-contact p {
+        font-size: 1rem;
+    }
+
+    .footer_social-media h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer_social-media {
+        display: block;
+    }
+
+    .footer-logo img {
+        width: 150px;
+        height: auto;
+        display: block;
+
+    }
+}
+
+@media screen and (min-width:1300px) {
+
+    .logo img {
+        padding: 8px;
+        margin-top: 8px;
+        margin-left: 16px;
+        width: 300px;
+        height: auto;
+    }
+
+    .nav_menu {
+        display: flex;
+        justify-content: space-around;
+        margin: 8px;
+        padding: 16px;
+    }
+
+    .nav_menu a {
+        border: 1px solid #21ebff;
+        color: #21ebff;
+        font-size: 2rem;
+        box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
+        transition: all 0.3s ease;
+        padding: 8px;
+    }
+
+    .nav_menu a:hover {
+        text-shadow:
+            0 0 20px #f752b2,
+            0 0 50px rgba(90, 204, 119, 0.9),
+            0 0 75px rgba(192, 216, 88, 0.8),
+            0 0 76px rgba(221, 58, 180, 0.7),
+            0 0 77px rgba(151, 255, 33, 0.6),
+            0 0 78px rgba(33, 235, 255, .5),
+            0 0 79px rgba(235, 226, 103, 0.4),
+            0 0 80px rgba(245, 223, 24, 0.3),
+            0 0 85px rgba(123, 231, 171, 0.2),
+            0 0 99px rgba(215, 255, 35, 0.1);
+    }
+
+    .page_link {
+        color: white;
+        width: 150px;
+        height: 150px;
+        padding: 8px;
+        padding-top: 16px;
+        font-family: 'Lato', sans-serif;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        border: none;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        background-color: rgba(36, 34, 34, 0.15);
+        backdrop-filter: blur(5px);
+    }
+
+    .sidebar_animal_names {
+        flex-basis: 20%;
+        text-align: center;
+        padding: 16px;
+        margin-left: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar_animal_names a {
+        font-size: 1.5rem;
+        padding-top: 5%;
+        margin: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* 14 */
+    .page_link:before,
+    .page_link:after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        border: 4px solid;
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    .page_link:before {
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #52e924;
+        border-left-color: #00aced;
+    }
+
+    .page_link:after {
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: #52e924;
+        border-right-color: #00aced;
+    }
+
+    .page_link:hover:before,
+    .page_link:hover:after {
+        border-color: #4d9e93;
+        border-top-color: #52e924;
+        border-right-color: #52e924;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 10px #00aced, 0 0 10px #00aced inset;
+        color: #52e924
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .logo img {
+        padding: 8px;
+        margin-top: 8px;
+        margin-left: 16px;
+        width: 300px;
+        height: auto;
+    }
+
+    .header_title {
+        padding: 16px;
+        margin-left: 20%;
+    }
+
+    .header_title_text {
+        color: white;
+        padding: 16px;
+        font-size: 4rem;
+        margin-left: 10%;
+    }
+
+    .welcome_description {
+        align-content: center;
+        flex-basis: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        margin: 48px;
+        background-color: rgba(36, 34, 34, 0.15);
+        backdrop-filter: blur(5px);
+    }
+
+    .welcome_text {
+        color: white;
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .zoo_description {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .animal_grid {
+        display: grid;
+        grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+        gap: 8px;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    .grid_items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_items a {
+        padding: 8px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .grid_items p{
+        padding:0;
+        margin-left:8px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        gap: 24px;
+        padding: 24px;
+        width: 100%;
+    }
+
+    .footer-copyright {
+        font-size: 1.5rem;
+    }
+
+    .footer-logo h2 {
+        font-size: 2rem;
+    }
+
+    .footer-contact h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-contact p {
+        font-size: 1rem;
+    }
+
+    .footer_social-media {
+        display: block;
+    }
+
+    .footer_social-media h4 {
+        font-size: 1.4rem;
+    }
+
+    .footer-logo img {
+        width: 200px;
+        height: auto;
+    }
+
+
+
+}
