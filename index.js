@@ -2,6 +2,7 @@ import express from "express";
 import * as path from "path";
 import { animalArray } from "./data/animals.js";
 import mammalsRouter from "./routes/mammals_router.js";
+import { style_file_name } from "./data/animals.js";
 
 const PORT = 3000;
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.static(path.join(__dirname,"public")))
 app.get("/",(req,res) => {
     res.render("pages/home.ejs",{
         animal : animalArray,
+        style_file_name:["home"],
         main_content_page :"home",
         body_class:"home",
         welcome_text : "Australian Zoo",

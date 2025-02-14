@@ -51,10 +51,16 @@ let birdYellowTailedBlackCockatoo = new Animals("Birds","Yellow Tailed Black Coc
     "It has a short crest on the top of its head. Its plumage is mostly brownish black and it has prominent yellow cheek patches and a yellow tail band. The body feathers are edged with yellow giving a scalloped appearance. The adult male has a black beak and pinkish-red eye-rings, and the female has a bone-coloured beak and grey eye-rings. In flight, yellow-tailed black cockatoos flap deeply and slowly, with a peculiar heavy fluid motion. Their loud, wailing calls carry for long distances. The whiteae is found south of Victoria to the East of South Australia and is smaller in size. The yellow-tailed black cockatoo is found in temperate forests and forested areas across south and central eastern Queensland to southeastern South Australia, including a very small population persisting in the Eyre Peninsula.[4] Two subspecies are recognised, although Tasmanian and southern mainland populations of the southern subspecies xanthanotus may be distinct enough from each other to bring the total to three. Birds of subspecies funereus (Queensland to eastern Victoria) have longer wings and tails and darker plumage overall, while those of xanthanotus (western Victoria, South Australia and Tasmania) have more prominent scalloping.",
     65,0.9,"SE Austalia",  "./images/Yellow-tailedBlackCockatoos.jpg", 'Birds', './html/birds.html');
 
+    let home =  "home.css"
+    let mammals =  "mammals.css"
+    let reptiles = "reptiles.css"
+
 //add the animals into an array
 let animalArray = [mammalEchidna,mammalTasmanianDevil,mammalquokka,reptileFrillNeckedLizard,reptileHawksbillTurtle,reptilePerentie,birdCassowary,birdKookaburra,birdYellowTailedBlackCockatoo];
 let mammalArray = [mammalEchidna,mammalTasmanianDevil,mammalquokka];
 let reptileArray = [reptileFrillNeckedLizard,reptileHawksbillTurtle,reptilePerentie];
 let birdArray = [birdCassowary,birdKookaburra,birdYellowTailedBlackCockatoo];
+let style_file_name = [home,mammals,reptiles];
 
-export {animalArray, mammalArray, reptileArray, birdArray};
+
+export {animalArray, mammalArray, reptileArray, birdArray, style_file_name};
