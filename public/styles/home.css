@@ -76,6 +76,13 @@ body{
     font-size: 2rem;
 }
 
+.main_content_description{
+    color: white;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
 .animal_names{
     flex-basis: 20%;
     text-align: center;
