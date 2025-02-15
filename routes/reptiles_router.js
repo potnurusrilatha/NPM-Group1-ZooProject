@@ -1,5 +1,5 @@
 import express from "express";
-import { animalArray, reptileArray } from "../data/animals.js";
+import {reptileArray } from "../data/animals.js";
 
 
 const reptilesRouter = express();
