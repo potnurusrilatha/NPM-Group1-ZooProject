@@ -33,6 +33,10 @@ body{
     margin-left:32%;
 }
 
+.header_title_text {
+    text-align: left;
+}
+
 .nav_menu{
     display:flex;
     justify-content: space-around;
@@ -107,6 +111,13 @@ body{
     margin-top: 5%;
     font-size: 2rem;
     padding: 16px;
+}
+
+.main_content_description{
+    color: white;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.25rem;
 }
 
 .footer {
