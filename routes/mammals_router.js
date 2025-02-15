@@ -6,7 +6,7 @@ const mammalsRouter = express();
 
 mammalsRouter.get("/",(req,res) => {
     res.render("pages/home.ejs",{   
-        style_file_name : ["home"],
+        style_file_name : ["home","mammals"],
         body_class_name:"mammals",
         header_class:"home",
         main_content_page : "mammals",
