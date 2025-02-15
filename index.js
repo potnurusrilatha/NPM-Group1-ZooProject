@@ -21,7 +21,6 @@ app.get("/",(req,res) => {
     console.log(animalArray.length)
     res.render("pages/home.ejs",{
         animal : animalArray,
-        style_file_name:["home"],
         main_content_page :"home",
         body_class_name:"home",
         welcome_text : "Australian Zoo",
@@ -29,7 +28,13 @@ app.get("/",(req,res) => {
     })
 })
 
+
+
+
+
+
 app.use("/reptiles",reptilesRouter)
 app.use("/birds",birdsRouter);
 app.use("/mammals", mammalsRouter);
+
 app.listen(PORT,() => console.log(`Listening on port ${PORT}`));

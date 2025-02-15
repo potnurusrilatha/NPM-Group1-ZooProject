@@ -31,23 +31,8 @@ body {
 }
 
 .header_title_text {
-<<<<<<< HEAD
-    text-align: left;
-}
-
-.nav_menu{
-    display:flex;
-    justify-content: space-around;
-    margin:8px;
-    padding:16px;
-}
-
-.nav_menu a{
-    color:white;
-=======
     color: white;
     padding: 16px;
->>>>>>> feature/practice
     font-size: 2rem;
 }
 
@@ -103,11 +88,6 @@ body {
     backdrop-filter: blur(5px);
 }
 
-<<<<<<< HEAD
-
-.main_content_description {
-    color: white;
-=======
 .welcome_text {
     color: white;
     font-size: 1.5rem;
@@ -145,7 +125,6 @@ body {
 
 .main_content_description {
     color: white;
->>>>>>> feature/practice
     display: flex;
     flex-direction: column;
     font-size: 1.25rem;
@@ -217,8 +196,6 @@ body {
 
 /* Birds.css */
 
-<<<<<<< HEAD
-=======
 /* Mammals.css */
 
 @media screen and (min-width:700px) {
@@ -302,8 +279,8 @@ body {
     }
 
     .sidebar_animal_names a {
-        padding-top: 15%;
-        font-size: 1.5rem;
+        padding-top: 20%;
+        font-size: 1.35rem;
         margin: 20px;
         text-decoration: none;
         text-align: center;
@@ -523,8 +500,8 @@ body {
     }
 
     .sidebar_animal_names a {
-        font-size: 1.5rem;
-        padding-top: 5%;
+        font-size: 1.35rem;
+        padding-top: 20%;
         margin: 20px;
         text-decoration: none;
         text-align: center;
@@ -679,16 +656,8 @@ body {
         width: 200px;
         height: auto;
     }
->>>>>>> feature/practice
 
 
 
 
-<<<<<<< HEAD
-
-
-
-/* Mammals.css */
-=======
 }
->>>>>>> feature/practice

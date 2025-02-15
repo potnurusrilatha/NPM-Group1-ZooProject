@@ -2,6 +2,7 @@ import express from "express";
 import { animalArray, reptileArray } from "../data/animals.js";
 
 
+
 const reptilesRouter = express();
 
 reptilesRouter.get("/",(req,res) => {
@@ -10,13 +11,12 @@ reptilesRouter.get("/",(req,res) => {
         header_class : "home",
         main_content_page : "home",
         welcome_text : "reptiles",
-        style_file_name: "home",
         animal_names : reptileArray
     })
 })
 
 reptilesRouter.get("/Frill-necked-lizard",(req,res)  => {
-    let frillNeckedLizard = reptileArray[1];
+    let frillNeckedLizard = reptileArray[0];
     res.render("pages/animal_display.ejs", {
         animal: frillNeckedLizard,
         main_content_page: "animals",
@@ -27,7 +27,7 @@ reptilesRouter.get("/Frill-necked-lizard",(req,res)  => {
 })
 
     reptilesRouter.get("/Hawksbill-Turtle",(req,res) => {
-        let hawksbillTurtle = reptileArray[2];
+        let hawksbillTurtle = reptileArray[1];
         res.render("pages/animal_display.ejs", {
             animal: hawksbillTurtle,
             main_content_page : "animals",

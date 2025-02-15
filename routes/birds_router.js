@@ -5,7 +5,6 @@ const birdsRouter = express();
 
 birdsRouter.get("/",(req,res) => {
     res.render("pages/home.ejs",{   
-        style_file_name : "home",
         body_class:"home",
         header_class:"home",
         main_content_page : "home",
@@ -34,7 +33,7 @@ birdsRouter.get("/Kookaburra",(req,res) => {
     })
 })
 
-birdsRouter.get("/Yellow%20Tailed%20Black%20Cockatoo",(req,res) => {
+birdsRouter.get("/Yellow-Tailed%20Black%20Cockatoo",(req,res) => {
     let YellowTailedBlackCockatoo = birdArray[2];
     res.render("pages/animal_display.ejs",{
         welcome_text: "birds",
