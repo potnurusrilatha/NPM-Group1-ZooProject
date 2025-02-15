@@ -38,8 +38,6 @@ reptilesRouter.get("/Frill-necked-lizard",(req,res)  => {
     })
 
 
-
-
  reptilesRouter.get("/Perentie" ,(req,res) => {
     let perentie  = reptileArray[2];
     res.render("pages/animal_display.ejs", {
