@@ -1,6 +1,19 @@
 <% if(locals.main_content_page){ %>
    <% if(locals.main_content_page === "home") { %>
-        <h1 class="welcome">Welcome to the page</h1>
+        <div class="welcome_description">
+                <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <div class="zoo_description">
+                        <p>Australian Zoo is a vibrant wildlife park home to a diverse range of animals, birds, and reptiles. Visitors can explore lush habitats featuring iconic Australian species like kangaroos, koalas, and crocodiles. Exotic birds fill the air with color and song, while slithering snakes and majestic lizards showcase the country’s rich reptilian life. The zoo also houses rare and endangered species, promoting conservation and wildlife education. Interactive experiences, such as feeding sessions and wildlife shows, offer a close-up look at these fascinating creatures. A perfect destination for nature lovers and adventure seekers alike!</p>
+                </div>
+                <div class="animal_grid">
+                        <% animal_names.forEach(animal => { %>
+                                <div class="grid_items">
+                                        <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                        <p><%= animal.name%></p>
+                                </div>
+                        <% }) %>
+                </div>
+        </div>
    <% } else if(locals.main_content_page === "animals"){ %>
                 <div class="main_content_description">       
                         <h1 class="header_title">Animal Name <%= animal.name %></h1>

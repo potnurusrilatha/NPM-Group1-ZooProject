@@ -1,6 +1,6 @@
- <div class="animal_names">
+        <div class="sidebar_animal_names frame">
             <% animal_names.forEach(animal => { %>
-                <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ", "-")%>"><%= animal.name %></a><br>
+                <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>" class="page_link"><%= animal.name %></a><br>
             <% }) %>
 </div>
    

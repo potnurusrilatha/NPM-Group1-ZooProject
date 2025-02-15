@@ -57,8 +57,8 @@ let birdYellowTailedBlackCockatoo = new Animals("Birds","Yellow Tailed Black Coc
 let mammalArray = [mammalEchidna,mammalTasmanianDevil,mammalquokka];
 let reptileArray = [reptileFrillNeckedLizard,reptileHawksbillTurtle,reptilePerentie];
 let birdArray = [birdCassowary,birdKookaburra,birdYellowTailedBlackCockatoo];
+let style_file_name = [home,mammals,reptiles];
 
-//add the animals into an array
 let animalArray = [...mammalArray, ...reptileArray, ...birdArray];
 
 export {animalArray, mammalArray, reptileArray, birdArray};

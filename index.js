@@ -21,8 +21,9 @@ app.get("/",(req,res) => {
     console.log(animalArray.length)
     res.render("pages/home.ejs",{
         animal : animalArray,
+        style_file_name:["home"],
         main_content_page :"home",
-        body_class:"home",
+        body_class_name:"home",
         welcome_text : "Australian Zoo",
         animal_names : animalArray
     })
