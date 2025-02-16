@@ -1,8 +1,6 @@
 import express from "express";
 import * as path from "path";
 import { animalArray } from "./data/animals.js";
-import mammalsRouter  from "./routes/mammals_router.js";
-import birdsRouter from "./routes/birds_router.js";
 import birdsRouter from "./routes/birds_router.js";
 import mammalsRouter  from "./routes/mammals_router.js";
 import reptilesRouter from "./routes/reptiles_router.js";
@@ -27,6 +25,8 @@ app.get("/",(req,res) => {
         animal_names : animalArray
     })
 })
+
+
 
 app.use("/mammals", mammalsRouter);
 app.use("/birds",birdsRouter);
