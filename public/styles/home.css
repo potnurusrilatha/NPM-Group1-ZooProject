@@ -19,6 +19,7 @@ body {
 }
 
 .logo img {
+    display:none;
     padding: 8px;
     margin-top: 8px;
     margin-left: 16px;
@@ -28,12 +29,15 @@ body {
 
 .header_title {
     padding: 16px;
+    display:flex;
+    justify-content: center;
 }
 
 .header_title_text {
     color: white;
     padding: 16px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  
 }
 
 .nav_menu {
@@ -410,8 +414,9 @@ body {
 @media screen and (min-width:1300px) {
 
     .logo img {
+        display:block;
         padding: 8px;
-        width: 200px;
+        width: 350px;
         height: auto;
     }
 
@@ -530,28 +535,17 @@ body {
         color: #52e924
     }
 
-    .logo {
-        display: flex;
-    }
-
-    .logo img {
-        padding: 8px;
-        margin-top: 8px;
-        margin-left: 16px;
-        width: 300px;
-        height: auto;
-    }
 
     .header_title {
         padding: 16px;
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
     .header_title_text {
         color: white;
         padding: 16px;
-        font-size: 4rem;
-        margin-left: 10%;
+        font-size: 3rem;
+        margin-left: 5%;
     }
 
     .welcome_description,
