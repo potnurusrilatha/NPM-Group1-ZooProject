@@ -2,6 +2,7 @@ import express from "express";
 import { mammalArray } from "../data/animals.js";
 
 
+
 const mammalsRouter = express();
 
 mammalsRouter.get("/",(req,res) => {
@@ -16,8 +17,8 @@ mammalsRouter.get("/",(req,res) => {
 
 mammalsRouter.get("/echidna",(req,res) => {
     let echidna = mammalArray[0];
-    res.render("pages/animal_display.ejs",{
-        welcome_text: "mammals",
+    res.render("pages/home.ejs",{
+        welcome_text: "Mammals - Echidna",
         body_class_name:"mammals",
         main_content_page : "animals",
         animal:echidna,
@@ -38,8 +39,8 @@ mammalsRouter.get("/echidna",(req,res) => {
 
 mammalsRouter.get("/tasmanian-devil",(req , res) => {
     let tasmanian_devil = mammalArray[1];
-    res.render("pages/animal_display.ejs",{
-        welcome_text: "mammals",
+    res.render("pages/home.ejs",{
+        welcome_text: "Mammals - Tasmanian Devil",
         main_content_page : "animals",
         animal: tasmanian_devil,
         animal_names : mammalArray
@@ -48,8 +49,8 @@ mammalsRouter.get("/tasmanian-devil",(req , res) => {
 
 mammalsRouter.get("/quokka",(req,res) => {
     let quokka = mammalArray[2];
-    res.render("pages/animal_display.ejs",{
-        welcome_text: "mammals",
+    res.render("pages/home.ejs",{
+        welcome_text: "Mammals - Quokka",
         main_content_page : "animals",
         animal: quokka,
         animal_names : mammalArray

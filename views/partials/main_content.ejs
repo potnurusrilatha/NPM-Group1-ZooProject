@@ -14,18 +14,63 @@
                         <% }) %>
                 </div>
         </div>
-   <% } else if(locals.main_content_page === "animals"){ %>
+   <% } else if(locals.main_content_page === "birds") { %>
+        <div class="welcome_description">
+                <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <div class="zoo_description">
+                        <p>At our zoo, you’ll discover a fascinating world of Birds! 🦜 Birds are feathered creatures with beaks and wings, often known for their ability to fly. From colorful parrots to majestic eagles, they bring the skies to life. </p>
+                </div>
+                <div class="animal_grid">
+                        <% animal_names.forEach(animal => { %>
+                                <div class="grid_items">
+                                        <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                        <p><%= animal.name%></p>
+                                </div>
+                        <% }) %>
+                </div>
+        </div>
+   <% } else if(locals.main_content_page === "mammals") { %>
+        <div class="welcome_description">
+                <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <div class="zoo_description">
+                        <p>At our zoo, you’ll discover a fascinating world of Mammals!  🦁 Mammals are warm-blooded animals that have fur and give birth to live young. They include everything from playful monkeys to mighty lions. </p>
+                </div>
+                <div class="animal_grid">
+                        <% animal_names.forEach(animal => { %>
+                                <div class="grid_items">
+                                        <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                        <p><%= animal.name%></p>
+                                </div>
+                        <% }) %>
+                </div>
+        </div>
+   <% } else if(locals.main_content_page === "reptiles") { %>
+        <div class="welcome_description">
+                <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <div class="zoo_description">
+                        <p>At our zoo, you’ll discover a fascinating world of Reptiles!🐍 Reptiles are cold-blooded and covered in scales, often found slithering or basking in the sun. Discover snakes, turtles, and crocodiles as they showcase their unique survival skills! </p>
+                </div>
+                <div class="animal_grid">
+                        <% animal_names.forEach(animal => { %>
+                                <div class="grid_items">
+                                        <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                        <p><%= animal.name%></p>
+                                </div>
+                        <% }) %>
+                </div>
+        </div>
+   <% }  else if(locals.main_content_page === "animals"){ %>
                 <div class="main_content_description">       
-                        <h1 class="header_title">Animal Name <%= animal.name %></h1>
+                        <h1 class="header_title_description">Animal Name <%= animal.name %></h1>
                         <h2 class="group_name">Group name <%= animal.groupName %></h2>
-                        <img src="/images/<%=animal.name.replace(" ","-")%>.jpg" alt="animal_image" width="250px" height="auto">
-                        <p><strong>Life Span:</strong> <%= animal.lifeSpan %> years</p>
-                        <p><strong>Food:</strong> <%= animal.food %></p>
-                        <p><strong>Description:</strong> <%= animal.description %></p>
-                        <p><strong>Length:</strong> <%= animal.length %> cm</p>
-                        <p><strong>Weight:</strong> <%= animal.weight %> kg</p>
-                        <p><strong>Place:</strong> <%= animal.place %></p>
-                        <p><strong>Group:</strong> <%= animal.group %></p>   
+                        <img  class="main_content_image" src="/images/<%=animal.name.replace(" ","-")%>.jpg" alt="animal_image" width="250px" height="auto">
+                        <p class="main_detail"><strong>Life Span:</strong> <%= animal.lifeSpan %> years</p>
+                        <p class="main_detail"><strong>Food:</strong> <%= animal.food %></p>
+                        <p class="main_detail"><strong>Description:</strong> <%= animal.description %></p>
+                        <p class="main_detail"><strong>Length:</strong> <%= animal.length %> cm</p>
+                        <p class="main_detail"><strong>Weight:</strong> <%= animal.weight %> kg</p>
+                        <p class="main_detail"><strong>Place:</strong> <%= animal.place %></p>
+                        <p class="main_detail"><strong>Group:</strong> <%= animal.group %></p>   
                 </div>         
         <% } %>
 <% } %>
