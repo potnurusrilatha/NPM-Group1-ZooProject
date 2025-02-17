@@ -32,11 +32,7 @@ app.get("/",(req,res) => {
 
 
 
-
-
-
-app.use("/reptiles",reptilesRouter)
-app.use("/birds",birdsRouter);
 app.use("/mammals", mammalsRouter);
-
+app.use("/birds",birdsRouter);
+app.use("/reptiles",reptilesRouter)
 app.listen(PORT,() => console.log(`Listening on port ${PORT}`));
