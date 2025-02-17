@@ -4,13 +4,14 @@ import { animalArray } from "./data/animals.js";
 import birdsRouter from "./routes/birds_router.js";
 import mammalsRouter  from "./routes/mammals_router.js";
 import reptilesRouter from "./routes/reptiles_router.js";
-import * as dotenv from "dotenv";
+//import * as dotenv from "dotenv";
 
 
 
-dotenv.config();
+//dotenv.config();
+//const PORT = process.env.PORT;
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 3000;
 const __dirname = path.resolve();
 
 app.set("views", path.join(__dirname,"views"));
